@@ -33,4 +33,13 @@ public class CarbonProject {
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
+
+    @Column(name = "owner_id")
+    private String ownerId;
+
+    @Column(name = "status")
+    private String status = "PENDING"; // PENDING, APPROVED, REJECTED
+
+    @Column(name = "verified_at")
+    private LocalDateTime verifiedAt;
 }
